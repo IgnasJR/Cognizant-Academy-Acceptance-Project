@@ -17,6 +17,8 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 # spring.jpa.show-sql=true
 ```
 
+Please note, the provided program.properties snippet has commented out lines, that are required to run tests successfully.
+
 
 ## Endpoints
 
@@ -59,17 +61,21 @@ Retrieves a list of books from the database. The response can be filtered based 
 **200 OK**
 ```json
 [
-	{ "id": 1,
-	"title": "Sample Book",
-	"author": "Author Name",
-	"genre": "Fiction",
-	"releaseYear": 2020,
-	"averageRating": 4.5 },
-	{ "id": 2,
-	"title": "Another Book",
-	"author": "Another Author",
-	"genre": "Non-Fiction",
-	"releaseYear": 2018,
-	"averageRating": 3.8 }
+	{ 
+		"id": 1,
+		"title": "Sample Book",
+		"author": "Author Name",
+		"genre": "Fiction",
+		"releaseYear": 2020,
+		"averageRating": 4.5 
+	},
+	{ 
+		"id": 2,
+		"title": "Another Book",
+		"author": "Another Author",
+		"genre": "Non-Fiction",
+		"releaseYear": 2018,
+		"averageRating": 3.8 
+	}
 ]
 ```
